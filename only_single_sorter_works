@@ -1,0 +1,24 @@
+from collections import Counter
+run = True
+
+
+def single_counter():
+    b = Counter()
+    c = input("Enter your numbers")
+    b.update(c)
+    print(b, "The format is '____' occurs '____' times")
+
+
+def double_counter():
+    b = Counter()
+    c = input("Enter your numbers with commas between each set")
+    b.update(c)
+    print("This is working")
+
+
+while run:
+    g = input("Would you like a single number counter, or double digits? single/double")
+    if g == "single":
+        single_counter()
+    elif g == "double":
+        double_counter()
